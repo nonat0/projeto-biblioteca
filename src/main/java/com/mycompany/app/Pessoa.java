@@ -4,6 +4,9 @@ import java.util.List;
 
 
 public class Pessoa {
+    public Pessoa() {
+    // Optionally initialize fields
+}
     protected String nome;
     protected List<Livro> livros = new ArrayList<>();
 

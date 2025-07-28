@@ -3,6 +3,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Usuario extends Pessoa {
+    public Usuario() {
+    // Optionally initialize fields
+    }
     private int idade;
     private List<Emprestimo> historicoEmprestimos = new ArrayList<>();
 
@@ -26,4 +29,5 @@ public class Usuario extends Pessoa {
     public void adicionarEmprestimo(Emprestimo e) {
         historicoEmprestimos.add(e);
     }
+
 }

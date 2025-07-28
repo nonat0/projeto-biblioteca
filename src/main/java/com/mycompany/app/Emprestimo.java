@@ -2,6 +2,9 @@ package com.mycompany.app;
 import java.util.*;
 
 public class Emprestimo {
+    public Emprestimo() {
+    // Optionally initialize fields
+}
     private Date dataRetirada;
     private Date dataDevolucao;
     private Livro livro;
@@ -32,6 +35,7 @@ public class Emprestimo {
 
 
     public Date getDataRetirada() {
+        dataDevolucao = new Date(System.currentTimeMillis() + 604800000L); // 7 dias
         return dataRetirada;
     }
 

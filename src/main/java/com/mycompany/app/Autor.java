@@ -3,6 +3,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Autor {
+    public Autor() {
+    // Optionally initialize fields
+}
     private String nome;
     private String nacionalidade;
     private List<Livro> obrasPublicadas = new ArrayList<>();
@@ -12,6 +15,18 @@ public class Autor {
         this.nacionalidade = nacionalidade;
     }
 
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
+    }
+
+    public void setObrasPublicadas(List<Livro> obrasPublicadas) {
+        this.obrasPublicadas = obrasPublicadas;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
     public String getNome() {
         return nome;
     }

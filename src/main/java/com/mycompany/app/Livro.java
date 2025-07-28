@@ -1,7 +1,9 @@
 package com.mycompany.app;
-
 public class Livro {
 
+    public Livro() {
+    // Optionally initialize fields
+}
     private String titulo;
     private Autor autor;
     private String genero;
